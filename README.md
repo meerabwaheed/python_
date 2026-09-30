@@ -110,3 +110,127 @@ numbers = np.array([10, 20, 30, 40, 50])
 print("Array:", numbers)
 print("Sum:", np.sum(numbers))
 print("Maximum:", np.max(numbers))
+# class Student:
+#     """A class to represent a student and manage their basic academic information."""
+
+#     def __init__(self, name, roll_no, department, sem):
+#         self.name = name
+#         self.roll_no = roll_no
+#         self.department = department
+#         self.sem = sem
+
+#     def id_card(self):
+#         return (
+#             f"Name: {self.name}\n"
+#             f"Roll no: {self.roll_no}\n"
+#             f"Department: {self.department}\n"
+#             f"Semester: {self.sem}\n"
+#         )
+
+#     def display(self):
+#         print(self.name)
+#         print(self.roll_no)
+#         print(self.department)
+#         print(self.sem)
+
+
+# # Create student object
+# student1 = Student("Meerab Waheed", "BSCS-123", "Computer Science", 3)
+
+# # Display student information
+# student1.display()
+
+# # Display ID card
+# print("\nID Card:")
+# print(student1.id_card())
+
+# class Student:
+#     def __init__(self, name, roll_no, marks):
+#         self.name = name
+#         self.roll_no = roll_no
+#         self.marks = marks
+
+#     def additional_marks(self, additional_marks):
+#         self.marks += additional_marks
+#         print(f"Total marks of student {self.name} is {self.marks}")
+
+#     def get_marks(self):
+#         return self.marks
+
+#     def calculating_grade(self):
+#         # Validate marks range first
+#         if self.marks < 0 or self.marks > 100:
+#             print("Invalid marks")
+#         elif self.marks >= 80:
+#             print("A")
+#         elif self.marks >= 70:
+#             print("B")
+#         elif self.marks >= 60:
+#             print("C")
+#         elif self.marks >= 50:
+#             print("D")
+#         else:
+#             print("F")
+
+
+# # Creating instance and calling methods
+# S1 = Student("meerab", 2, 80)
+
+# S1.additional_marks(10)   # Updates marks from 80 to 90
+# S1.calculating_grade()    # Prints "A" because marks are 90
+
+# class BankAccount:
+#     def __init__(self, title, balance=0.0):
+#         self.title = title
+#         self.balance = float(balance)
+
+#     def deposit(self, amount):
+#         if amount <= 0:
+#             raise ValueError("Pesa do")
+#         self.balance += amount
+
+#     def withdraw(self, amount):
+#         if amount <= 0:
+#             raise ValueError("Withdraw must be positive bhai")
+#         if amount > self.balance:
+#             raise ValueError("Kum Balance")
+#         self.balance -= amount
+
+
+# # Creating object and testing methods
+# account = BankAccount("Ali", 1000)
+
+# try:
+#     account.deposit(500)
+#     account.withdraw(300)
+#     print("Balance:", account.balance)
+
+# except ValueError as err:
+#     print("Error:", err)
+
+
+def linear_search(arr, key):
+    # Iterate through the array
+    for i in range(len(arr)):
+        # Check if the current element matches the key
+        if arr[i] == key:
+            return i
+
+    # Return -1 if key is not found
+    return -1
+
+
+# Define array and search key
+names = ['Meerab', 'Mahad', 'Balach', 'Faran']
+search_key = 'Meerab'
+
+
+# Call linear_search function
+result = linear_search(names, search_key)
+
+
+# Display result
+if result != -1:
+    print(f"Key '{search_key}' found at index {result}.")
+else:
+    print(f"Key '{search_key}' not found in the list.")
