@@ -1,7 +1,7 @@
 print("it's my first Dsa lab")
 # 2. Variables
 name = "John"
-age = 25
+age = 26
 print("Name:", name)
 print("Age:", age)
 # Taking User Input
