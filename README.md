@@ -234,3 +234,11 @@ if result != -1:
     print(f"Key '{search_key}' found at index {result}.")
 else:
     print(f"Key '{search_key}' not found in the list.")
+stackb = []
+stackb.append(10)
+stackb.append(20)
+stackb.append(30)
+stackb.append(40)
+print("ahmed bhai k passs stackb ki value:", stackb)
+index = stackb.index(10)
+print("Index of 10 in stackb =", index)
