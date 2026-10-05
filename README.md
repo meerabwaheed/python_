@@ -28,7 +28,7 @@ print("Students:", students)
 
 from array import array
 
-marks = array('i', [78, 85, 92, 67, 88])
+marks = array('i', [88, 85, 92, 67, 88])
 
 print(marks)
 print(marks[0])
