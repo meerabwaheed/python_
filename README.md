@@ -7,8 +7,8 @@ print("Age:", age)
 # Taking User Input
 name = input("Enter your name: ")
 print("Hello", name)
-a = 10
-b = 20
+a = 20
+b = 30
 sum = a + b
 print("Sum =", sum)
 students = ["Ali", "Sara", "Ahmed", "Ayesha"]
