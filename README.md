@@ -242,3 +242,40 @@ stackb.append(40)
 print("ahmed bhai k passs stackb ki value:", stackb)
 index = stackb.index(10)
 print("Index of 10 in stackb =", index)
+class BrowserHistory:
+
+    def __init__(self):
+        self.history = []
+
+    def visit(self, page):
+        self.history.append(pqage)
+        print("Visited:", page)
+
+    def back(self):
+        if len(self.history) > 1:
+            current = self.history.pop()
+            print("Back from:", current)
+            print("Current page:", self.history[-1])
+        else:
+            print("No previous page available")
+
+    def show_history(self):
+        print("\nBrowser History:")
+        for page in self.history:
+            print(page)
+
+
+# Create Browser History object
+browser = BrowserHistory()
+
+# Visit pages
+browser.visit("google.com")
+browser.visit("youtube.com")
+browser.visit("github.com")
+
+# Show history
+browser.show_history()
+
+# Go back
+browser.back()
+browser.back()
