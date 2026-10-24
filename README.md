@@ -279,3 +279,31 @@ browser.show_history()
 # Go back
 browser.back()
 browser.back()
+
+class node:
+    def_init_(self,data):
+    self.data = data
+    self.next = None
+
+    node1 = Node("ali")
+
+ print(node1.data)
+ print(node1.next)
+# node
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+node1 = Node("ali")
+
+print(node1.data)
+print(node1.next)
+
+# singly linked list
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+        
