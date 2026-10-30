@@ -1,5 +1,5 @@
 print("it's my first Dsa lab")
-# 2. Variables
+ 2. Variables
 name = "John"
 age = 27
 print("Name:", name)
